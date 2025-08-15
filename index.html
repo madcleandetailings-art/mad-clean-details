@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M&C Mad Clean Details</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-7LW4B8mhrk0NEiCgafWcPVQl8rU8CtEs13CBo2Yp2Gx5IGk4ciRcD8UoejrdoII0HeAIVJkN9GZ2k6OmtQbjrg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header id="home">
+    <div class="container nav-container">
+      <!-- Replace the logo image with a text‑based brand name to eliminate external images -->
+      <a href="#home" class="logo-text">M&C&nbsp;Mad Clean Details</a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#booking" class="btn-nav">Book Now</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Mad Clean Happy Drivers</h1>
+      <p>Premium mobile car detailing service based in River Falls. We come to you and leave your ride spotless.</p>
+      <a href="#booking" class="btn btn-primary">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2>Our Detailing Packages</h2>
+      <p class="section-intro">Choose from our straightforward packages or customise your detail with optional add‑ons.</p>
+      <div class="service-grid">
+        <!-- Bronze Package: Exterior Only -->
+        <div class="service-card">
+          <div class="icon"><i class="fa-solid fa-car-side"></i></div>
+          <h3>Bronze – Exterior Only</h3>
+          <!-- Show separate pricing for sedans and larger vehicles -->
+          <p class="price">Sedan&nbsp;$50 / SUV&nbsp;or&nbsp;Truck&nbsp;$70</p>
+          <ul>
+            <li>Hand washed and dried by hand</li>
+            <li>Pre‑wash foam &amp; shampoo to loosen heavy grime</li>
+            <li>Premium wheel &amp; tire deep clean with specialized products</li>
+            <li>Windows and mirrors cleaned inside and out</li>
+          </ul>
+        </div>
+        <!-- Silver Package: Interior Only -->
+        <div class="service-card">
+        <!-- Recommended badge for our most popular interior package -->
+        <div class="package-label recommended">Recommended</div>
+        <div class="icon"><i class="fa-solid fa-broom"></i></div>
+          <h3>Silver – Interior Only</h3>
+          <!-- Separate pricing for sedans vs. SUVs/trucks -->
+          <p class="price">Sedan&nbsp;$150 / SUV&nbsp;or&nbsp;Truck&nbsp;$180</p>
+          <ul>
+            <li>Vacuum carpets and seats thoroughly</li>
+            <li>Shampoo &amp; hot‑water extraction to lift dirt and stains</li>
+            <li>Door jambs, cup holders, and all hard surfaces cleaned and sanitised</li>
+            <li>Leather conditioning (if applicable); no exterior polish or wax</li>
+          </ul>
+        </div>
+        <!-- Gold Package: Interior + Exterior -->
+        <div class="service-card">
+        <!-- Best value badge for our full service package -->
+        <div class="package-label best-value">Best Value</div>
+        <div class="icon"><i class="fa-solid fa-gem"></i></div>
+          <h3>Gold – Inside &amp; Out</h3>
+          <p class="price"><span class="old-price">$200</span>&nbsp;$180&nbsp;(Sedan) / SUV&nbsp;or&nbsp;Truck&nbsp;$230</p>
+          <ul>
+            <li>Includes all Bronze &amp; Silver services</li>
+            <li>Wax &amp; paint sealant (protects paint for 3–6&nbsp;months)</li>
+            <li>Light exterior polish</li>
+            <li>Door jambs &amp; cup holders cleaned</li>
+          </ul>
+        </div>
+      </div>
+      <h3 class="addons-title">Add‑Ons</h3>
+      <div class="addons-grid">
+        <div class="addon-item">
+          <i class="fa-solid fa-lightbulb addon-icon" aria-hidden="true"></i>
+          <h4>Headlight Restoration</h4>
+          <p class="addon-price">$30</p>
+          <p>Bring clarity back to dull lenses and improve nighttime visibility.</p>
+        </div>
+        <div class="addon-item">
+          <i class="fa-solid fa-magic addon-icon" aria-hidden="true"></i>
+          <h4>Clay Bar Treatment</h4>
+          <p class="addon-price">$50</p>
+          <p>Remove embedded contaminants for a glass‑smooth finish.</p>
+        </div>
+        <div class="addon-item">
+          <i class="fa-solid fa-spray-can addon-icon" aria-hidden="true"></i>
+          <h4>Spray Wax</h4>
+          <p class="addon-price">$25</p>
+          <p>Quick shine and protection to keep your paint glossy.</p>
+        </div>
+        <div class="addon-item">
+          <i class="fa-solid fa-shield-alt addon-icon" aria-hidden="true"></i>
+          <h4>Paint Sealant</h4>
+          <p class="addon-price">$60</p>
+          <p>Add a durable protective layer that lasts 3–6&nbsp;months.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose" id="why-choose">
+    <div class="container">
+      <h2>Why Choose Us?</h2>
+      <p class="section-intro">We go the extra mile to make sure you and your vehicle are taken care of.</p>
+      <div class="features-grid">
+        <div class="feature-item">
+          <i class="fa-solid fa-check-circle"></i>
+          <h4>Premium Products</h4>
+          <p>We use only high‑quality, professional‑grade cleaners, polishes and sealants that are safe for your vehicle.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-truck-moving"></i>
+          <h4>Mobile Service</h4>
+          <p>Our fully equipped mobile unit comes to you—home, work or anywhere convenient—saving you time and hassle.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-thumbs-up"></i>
+          <h4>100% Satisfaction</h4>
+          <p>Your happiness is our top priority. We stand behind our work and make it right if you're not completely satisfied.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <details>
+          <summary>How long does a typical detail take?</summary>
+          <p>Most standard sedan details take 2–3 hours. Larger vehicles or add‑ons may add extra time.</p>
+        </details>
+      </div>
+      <div class="faq-item">
+        <details>
+          <summary>Do you need access to electricity or water?</summary>
+          <p>Currently we do not provide our own water or power. Please ensure there is access to a water spigot and a standard electrical outlet at your location.</p>
+        </details>
+      </div>
+      <div class="faq-item">
+        <details>
+          <summary>What forms of payment do you accept?</summary>
+          <p>We accept cash, Cash App, Venmo and PayPal. Just let us know your preferred method when booking.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <h2>What Our Customers Say</h2>
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <p class="review-text">“My car looked brand new after the Bronze package. Highly recommend!”</p>
+          <div class="reviewer">
+            <span class="name">John S.</span>
+            <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+        </div>
+        <!-- Review 2 -->
+        <div class="review-card">
+          <p class="review-text">“They removed all the pet hair and odors from my SUV. I couldn't be happier!”</p>
+          <div class="reviewer">
+            <span class="name">Sarah T.</span>
+            <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+          </div>
+        </div>
+        <!-- Review 3 -->
+        <div class="review-card">
+          <p class="review-text">“The team arrived on time and did an amazing job. Excellent value for the money.”</p>
+          <div class="reviewer">
+            <span class="name">Mike R.</span>
+            <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+        </div>
+        <!-- Review 4 -->
+        <div class="review-card">
+          <!-- Updated to reference our Gold package instead of the removed Diamond package -->
+          <p class="review-text">“The Gold package is worth every penny. My car's interior and exterior look flawless.”</p>
+          <div class="reviewer">
+            <span class="name">Alex K.</span>
+            <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+        </div>
+        <!-- Review 5 (no photo) -->
+        <div class="review-card">
+          <p class="review-text">“After their Gold package my truck shines like new. The attention to detail on the exterior is impressive!”</p>
+          <div class="reviewer">
+            <span class="name">Karen M.</span>
+            <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+          </div>
+        </div>
+        <!-- Review 6 (no photo) -->
+        <div class="review-card">
+          <p class="review-text">“I chose the Silver interior package and was blown away. Seats, carpets and every nook were spotless and smelled amazing.”</p>
+          <div class="reviewer">
+            <span class="name">Derek L.</span>
+            <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready for a Spotless Ride?</h2>
+      <p>Experience the M&C difference today. Our mobile detailing service delivers showroom‑quality results wherever you are.</p>
+      <a href="#booking" class="btn-secondary">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="booking" id="booking">
+    <div class="container">
+      <h2>Book Your Detail</h2>
+      <p class="section-intro">Fill out the form below and we'll get back to you to confirm your appointment.</p>
+      <form id="booking-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name<span>*</span></label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email<span>*</span></label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone<span>*</span></label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="vehicle-type">Vehicle Type<span>*</span></label>
+            <select id="vehicle-type" name="vehicle-type" required>
+              <option value="">Select vehicle type</option>
+              <option value="Sedan">Sedan</option>
+              <option value="SUV">SUV / Truck / Van</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">Select Package<span>*</span></label>
+          <select id="service" name="service" required>
+            <option value="">-- Select a Package --</option>
+            <!-- Include both sedan and SUV pricing to give customers clarity at booking time -->
+            <option value="Bronze – Exterior Only">Bronze – Exterior Only ($50&nbsp;sedan / $70&nbsp;SUV)</option>
+            <option value="Silver – Interior Only">Silver – Interior Only ($150&nbsp;sedan / $180&nbsp;SUV)</option>
+            <option value="Gold – Inside & Out">Gold – Inside &amp; Out ($180&nbsp;sedan / $230&nbsp;SUV)</option>
+          </select>
+        </div>
+
+        <!-- Add‑ons Selection -->
+        <div class="form-group">
+          <label>Add‑Ons (optional)</label>
+          <div class="addons-select">
+            <label class="addon-option"><input type="checkbox" id="addon-headlight" value="Headlight Restoration" data-price="30"> Headlight Restoration ($30)</label>
+            <label class="addon-option"><input type="checkbox" id="addon-clay" value="Clay Bar Treatment" data-price="50"> Clay Bar Treatment ($50)</label>
+            <label class="addon-option"><input type="checkbox" id="addon-spray" value="Spray Wax" data-price="25"> Spray Wax ($25)</label>
+            <label class="addon-option"><input type="checkbox" id="addon-sealant" value="Paint Sealant" data-price="60"> Paint Sealant ($60)</label>
+          </div>
+        </div>
+
+        <!-- Price summary for sedan (updates via JS) -->
+        <div class="form-group">
+          <label>Estimated Total</label>
+          <p id="price-summary" class="price-summary">$0</p>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Preferred Date<span>*</span></label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label for="time">Preferred Time<span>*</span></label>
+            <input type="time" id="time" name="time" required>
+          </div>
+        </div>
+        <div class="form-group full">
+          <label for="notes">Additional Details</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Tell us anything we should know about your vehicle..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <p class="form-message" id="form-message"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-left">
+        <!-- Use a text heading instead of a logo image to keep the site self‑contained -->
+        <h3 class="footer-brand">M&C&nbsp;Mad Clean Details</h3>
+        <p>M&C&nbsp;Mad Clean Details is a locally owned mobile detailing service based in River Falls. We’re committed to keeping your ride spotless and making you a happy driver.</p>
+      </div>
+      <div class="footer-center">
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-location-dot"></i> River Falls</p>
+        <p><i class="fa-solid fa-phone"></i> 651&nbsp;890&nbsp;6856</p>
+        <p><i class="fa-solid fa-envelope"></i> madclean.detailings@gmail.com</p>
+      </div>
+      <div class="footer-right">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 M&C Mad Clean Details. All rights reserved.</p>
+    </div>
+  </footer>
+
+    <!-- Scroll To Top Button -->
+    <button id="scroll-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+  <!-- Package Detail Modal -->
+  <div id="package-modal" class="package-modal" aria-hidden="true">
+    <div class="package-modal-content">
+      <span class="close-modal" id="close-modal" aria-label="Close" tabindex="0">&times;</span>
+      <!-- Modal image is inserted back to showcase package visuals.  The src will be set dynamically via JS -->
+      <img id="modal-image" class="modal-image" alt="Package illustration" style="display:none;">
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+      <ul id="modal-features" class="modal-features"></ul>
+      <p id="modal-price" class="modal-price"></p>
+      <div id="modal-addons" class="modal-addons"></div>
+      <button id="modal-book-btn" class="btn btn-primary">Book This Package</button>
+    </div>
+  </div>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
