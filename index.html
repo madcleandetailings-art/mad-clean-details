@@ -66,7 +66,9 @@
         </div>
         <!-- Silver Package: Interior Only -->
         <div class="service-card">
-          <div class="icon"><i class="fa-solid fa-broom"></i></div>
+        <!-- Recommended badge for our most popular interior package -->
+        <div class="package-label recommended">Recommended</div>
+        <div class="icon"><i class="fa-solid fa-broom"></i></div>
           <h3>Silver – Interior Only</h3>
           <!-- Separate pricing for sedans vs. SUVs/trucks -->
           <p class="price">Sedan&nbsp;$150 / SUV&nbsp;or&nbsp;Truck&nbsp;$180</p>
@@ -79,7 +81,9 @@
         </div>
         <!-- Gold Package: Interior + Exterior -->
         <div class="service-card">
-          <div class="icon"><i class="fa-solid fa-gem"></i></div>
+        <!-- Best value badge for our full service package -->
+        <div class="package-label best-value">Best Value</div>
+        <div class="icon"><i class="fa-solid fa-gem"></i></div>
           <h3>Gold – Inside &amp; Out</h3>
           <p class="price"><span class="old-price">$200</span>&nbsp;$180&nbsp;(Sedan) / SUV&nbsp;or&nbsp;Truck&nbsp;$230</p>
           <ul>
@@ -93,21 +97,25 @@
       <h3 class="addons-title">Add‑Ons</h3>
       <div class="addons-grid">
         <div class="addon-item">
+          <i class="fa-solid fa-lightbulb addon-icon" aria-hidden="true"></i>
           <h4>Headlight Restoration</h4>
           <p class="addon-price">$30</p>
           <p>Bring clarity back to dull lenses and improve nighttime visibility.</p>
         </div>
         <div class="addon-item">
+          <i class="fa-solid fa-magic addon-icon" aria-hidden="true"></i>
           <h4>Clay Bar Treatment</h4>
           <p class="addon-price">$50</p>
           <p>Remove embedded contaminants for a glass‑smooth finish.</p>
         </div>
         <div class="addon-item">
+          <i class="fa-solid fa-spray-can addon-icon" aria-hidden="true"></i>
           <h4>Spray Wax</h4>
           <p class="addon-price">$25</p>
           <p>Quick shine and protection to keep your paint glossy.</p>
         </div>
         <div class="addon-item">
+          <i class="fa-solid fa-shield-alt addon-icon" aria-hidden="true"></i>
           <h4>Paint Sealant</h4>
           <p class="addon-price">$60</p>
           <p>Add a durable protective layer that lasts 3–6&nbsp;months.</p>
@@ -221,6 +229,15 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready for a Spotless Ride?</h2>
+      <p>Experience the M&C difference today. Our mobile detailing service delivers showroom‑quality results wherever you are.</p>
+      <a href="#booking" class="btn-secondary">Book Now</a>
     </div>
   </section>
 
@@ -338,7 +355,8 @@
   <div id="package-modal" class="package-modal" aria-hidden="true">
     <div class="package-modal-content">
       <span class="close-modal" id="close-modal" aria-label="Close" tabindex="0">&times;</span>
-      <!-- Removed modal image element to keep the site purely text‑based and avoid external images -->
+      <!-- Modal image is inserted back to showcase package visuals.  The src will be set dynamically via JS -->
+      <img id="modal-image" class="modal-image" alt="Package illustration" style="display:none;">
       <h3 id="modal-title"></h3>
       <p id="modal-description"></p>
       <ul id="modal-features" class="modal-features"></ul>

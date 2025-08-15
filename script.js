@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Premium wheel & tire deep clean with specialized products',
         'Windows and mirrors cleaned inside and out'
       ],
-      image: 'images/exterior.png',
+      image: '',
       priceSedan: 50,
       priceSUV: 70
     },
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Door jambs, cup holders and hard surfaces cleaned and sanitised',
         'Leather conditioning (if applicable); no exterior polish or wax'
       ],
-      image: 'images/hero-image.jpg',
+      image: '',
       priceSedan: 150,
       priceSUV: 180
     },
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Light exterior polish',
         'Door jambs & cup holders cleaned'
       ],
-      image: 'images/exterior.png',
+      image: '',
       priceSedan: 180,
       priceSUV: 230,
       oldPrice: 200
@@ -87,6 +87,36 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalAddons = document.getElementById('modal-addons');
   const modalBookBtn = document.getElementById('modal-book-btn');
   const modalClose = document.getElementById('close-modal');
+
+  // Load embedded base64 images from JSON and set hero and package visuals
+  fetch('embedded_images2.json')
+    .then(response => response.json())
+    .then(images => {
+      // Apply hero background
+      const heroSection = document.querySelector('.hero');
+      if (heroSection && images.hero) {
+        heroSection.style.backgroundImage = `url('data:image/jpeg;base64,${images.hero}')`;
+        heroSection.style.backgroundSize = 'cover';
+        heroSection.style.backgroundPosition = 'center';
+      }
+      // Update package images
+      if (images.exterior) {
+        if (packages['Bronze – Exterior Only']) {
+          packages['Bronze – Exterior Only'].image = `data:image/jpeg;base64,${images.exterior}`;
+        }
+        if (packages['Gold – Inside & Out']) {
+          packages['Gold – Inside & Out'].image = `data:image/jpeg;base64,${images.exterior}`;
+        }
+      }
+      if (images.hero) {
+        if (packages['Silver – Interior Only']) {
+          packages['Silver – Interior Only'].image = `data:image/jpeg;base64,${images.hero}`;
+        }
+      }
+    })
+    .catch(error => {
+      console.error('Error loading embedded images:', error);
+    });
 
   // Show package modal with details
   function openPackageModal(pkgName) {
